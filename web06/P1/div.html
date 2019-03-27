@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Div Demo</title>
+    <style>
+        #heading{
+            height: 100px;
+            width: 100%;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        #menu{
+            height: 700px;
+            width: 25%;
+            background-color: bisque;
+            float: left;
+        }
+        #section{
+            height: 700px;
+            width: 75%;
+            background-color: chocolate;
+            float: right;
+        }
+        .clearfix{
+            clear: both;
+        }
+        #footer{
+            height: 100px;
+            width: 100%;
+            background-color: cadetblue;
+        }
+        ul li{
+            list-style-type: none;
+            float: left;
+            margin: 0px 10px;
+            font-size: 20px;
+        }
+        ul li a{
+            background-color: cornflowerblue;
+            padding: 5px;
+
+        }
+        ul li a:hover{
+            background-color: darkgoldenrod;
+        }
+    </style>
+    <script>
+        function changeColor(index){
+            let p = document.getElementById('section');
+            switch(index){
+                case 1:
+                    p.style.backgroundColor = "yellow";
+                break;
+                case 2:
+                    p.style.backgroundColor = "red";
+                break;
+                case 3:
+                    p.style.backgroundColor = "blue";
+                break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="heading" >
+            <h1>Heading</h1>
+            <ul>
+                <li onclick="changeColor(1)"><a href="#">Link 1</a></li>
+                <li onclick="changeColor(2)"><a href="#">Link 2</a></li>
+                <li onclick="changeColor(3)"><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <div id="menu">
+            menu
+        </div>
+        <div id="section">
+            section
+        </div>
+        <div class="clearfix"></div>
+        <div id="footer">
+            footer
+        </div>
+    </div>
+</body>
+</html>
