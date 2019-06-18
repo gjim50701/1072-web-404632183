@@ -1,0 +1,325 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Camping a Travel Category Bootstrap Responsive Template | Home :: W3layouts</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Camping Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet"> -->
+    <!-- //Fonts -->
+
+</head>
+
+<body>
+    <!-- mian-content -->
+    <div class="main-content" id="home">
+     
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <!-- nav -->
+                <nav class="py-3">
+                    <div id="logo">
+                        <h1> <a class="navbar-brand" href="/index.html">Camping</a>
+                        </h1>
+                    </div>
+
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop" />
+                    <ul class="menu mt-2">
+                        <li class="active"><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li>
+                            <!-- First Tier Drop Down -->
+                            <label for="drop-2" class="toggle">Drop Down <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                            <a href="#">More Info <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                            <input type="checkbox" id="drop-2" />
+                            <ul>
+                                    <li><a href="/images/DB1.PNG">DB agent data</a>
+                                    </li>
+                                    <li><a href="/images/DB2.PNG">DB tour data</a>
+                                    </li>
+                                    <li><a href="/agents">Travel Agents</a>
+                                    </li>
+                                    <li><a href="/tours/recent">Recent Tours</a>
+                                    </li>
+                                    <li><a href="/tours/gallery">Tours Gallery</a>
+                                    </li>
+                                    <li><a href="/combined">Combined</a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li><a href="/contact.html">Contact</a>
+                        </li>
+                      
+                    </ul>
+
+
+                </nav>
+                <!-- //nav -->
+            </div>
+        </header>
+        <!-- //header -->
+      <!-- banner -->
+      <section class="banner">
+            <div class="container">
+                <div class="row banner-grids">
+                    <div class="col-lg-6 banner-info-w3ls">
+                        <h2>Enjoy Your Holiday Trip
+                        </h2>
+                        <h3 class="mb-3">Plan Your Holiday Trip Now Exceptional Adventure</h3>
+                        <p class="mb-4"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. </p>
+                        <a href="about.html" class="btn">Read More</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <!-- //banner -->
+    </div>
+ 
+   
+    <!--//team -->
+    <section class="banner-bottom py-lg-5 py-4">
+        <div class="container">
+            <div class="inner-sec-w3pvt speak">
+                <h3 class="tittle  text-center my-lg-5 my-3">Our Travel Agents</h3>
+                <div class="row mt-lg-5 mt-4">
+                <% for(var i=0; i < tdata.length ; i++){ %>
+                    <div class="col-md-4 team-gd text-center">
+                        <div class="team-img mb-4">
+                            <img src="/images/<%= tdata[i].pic %>" class="img-fluid" alt="user-image">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Agent</span><%= tdata[i].name %></h3>
+                            <p><%= tdata[i].description %></p>
+                            <ul class="top-right-info text-center mt-md-4 mt-3">
+                                
+                                <li class="mr-1">
+                                    <a href="#">
+											<span class="fa fa-facebook-f"></span>
+										</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											<span class="fa fa-twitter"></span>
+										</a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="#">
+											<span class="fa fa-google-plus"></span>
+										</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                 <% } %>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//team -->
+   
+      <!-- portfolio -->
+      <section class="portfolio-flyer py-5" id="gallery">
+            <div class="container pt-lg-3 pb-md-5">
+                <h3 class="tittle  text-center my-lg-5 my-3">Our Recent Tours</h3>
+    
+                <div class="row news-grids pb-lg-5 mt-3 mt-lg-5">
+                    <% for(var i=0; i < 6 ; i++){ %>
+                    <div class="col-lg-4 gal-img">
+                        <div class="gal-info">
+                            <a href="#gal1"><img src="/images/<%= rdata[i].pic %>" alt="news image" class="img-fluid"></a>
+                            <div class="property-info-list">
+                                <div class="detail">
+                                    <h4 class="title">
+                                        <a href="/about.html"><%= rdata[i].tour_name %></a>
+                                    </h4>
+                                    <div class="location mt-2">
+                                        <a href="/about.html">
+                                       <span class="fa fa-map-marker"></span> <%= rdata[i].place %>
+                                    </a>
+                                    </div>
+                                    <ul class="facilities-list clearfix">
+                                        <li>
+                                            <span class="fa fa-clock-o"></span> <%= rdata[i].days %> days
+                                        </li>
+                                        <li>
+                                            <span class="fa fa-clock-o"></span> <%= rdata[i].nights %> nights
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-properties">
+                                    <a class="admin" href="#">
+                                    <span class="fa fa-user"></span> <%= rdata[i].person_name %>
+                                </a>
+                                    <span class="year text-right"> <span class="fa fa-calendar"></span> 2 months ago</span>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                </div>
+    
+            </div>
+        </section>
+        <!-- //portfolio -->
+
+        <section class="portfolio-flyer py-5" id="gallery">
+                <div class="container pt-lg-3 pb-md-5">
+                  <h3 class="tittle  text-center my-lg-5 my-3">Our Gallery</h3>
+                  <div class="row news-grids pb-lg-5 mt-3 mt-lg-5">
+                        <% for(var i=0; i < gdata.length ; i++){ %> 
+                    <div class="col-lg-4 gal-img">
+                      <div class="gal-info">
+                        <a href="#gal1"
+                          ><img src="/images/<%= gdata[i].pic %>" alt="news image" class="img-fluid"
+                        /></a>
+                      </div>
+                    </div>
+                    <% } %>
+                    <!-- <div class="col-lg-4 gal-img mt-lg-4">
+                      <div class="gal-info">
+                        <a href="#gal7"
+                          ><img src="images/7.jpg" alt="news image" class="img-fluid"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 gal-img mt-lg-4">
+                      <div class="gal-info">
+                        <a href="#gal8"
+                          ><img src="images/8.jpg" alt="news image" class="img-fluid"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 gal-img mt-lg-4">
+                      <div class="gal-info">
+                        <a href="#gal9"
+                          ><img src="images/9.jpg" alt="news image" class="img-fluid"
+                        /></a>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </section>
+
+    <!--footer -->
+    <footer>
+        <div class="footer_1its py-5">
+            <div class="container py-md-4">
+
+                <div class="row footer-top mb-md-5 mb-4">
+                    <div class="col-lg-4 col-md-6 footer-grid_section_1its" data-aos="fade-right">
+                        <div class="footer-title-w3pvt">
+                            <h3>Address</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p>Address : 1234 lock, Charlotte, North Carolina, United States</p>
+                            <p>Phone : +12 534894364</p>
+                            <p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
+                            <p>Fax : +12 534894364</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4 footer-grid_section_1its">
+                        <div class="footer-title-w3pvt">
+                            <h3>Quick Links</h3>
+                        </div>
+                         <div class="row no-gutters">
+                            <ul class="links">
+                                <li><a href="/index.html">Home </a></li>
+                                <li><a href="/about.html">About </a></li>
+                                <li><a href="/features.html">Services</a></li>
+
+                                <li><a href="/gallery.html">Gallery</a></li>
+                                <li><a href="/contact.html">Contact </a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-lg-0 mt-4 col-sm-12 footer-grid_section_1its" data-aos="fade-left">
+                        <div class="footer-title-w3pvt">
+                            <h3>Newsletter</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+                            <form action="#" method="post">
+                                <input type="email" name="Email" placeholder="Enter your email..." required="">
+                                <button class="btn1"><span class="fa fa-paper-plane-o" aria-hidden="true"></span></button>
+                                <div class="clearfix"> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="cpy-right py-3">
+	<div class="container">
+		<div class="row no-gutters">
+		<div class="col-md-8">
+			<p class="copy-w3layouts">© 2018 Camping. All rights reserved | Design by
+				<a href="http://w3layouts.com">W3layouts.</a>
+			</p>
+		</div>
+        <div class="col-md-4 footer-grid_section">
+			<ul class="top-right-info">
+                                
+                                <li class="mr-1">
+                                    <a href="#">
+											<span class="fa fa-facebook-f"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											<span class="fa fa-twitter"></span></a>
+                                </li>
+                                <li class="mx-1">
+                                    <a href="#">
+											<span class="fa fa-google-plus"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+											<span class="fa fa-dribbble"></span></a>
+                                </li>
+                            </ul>
+                </div>
+			</div>
+    </div>
+	</div>
+    <!-- //copyright -->
+</body>
+</html>

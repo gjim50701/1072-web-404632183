@@ -1,0 +1,36 @@
+#header{
+    background-color: darkred;
+    color: white;
+    width: 700px;
+    height: 80px;
+    margin: 0px auto;
+    line-height: 80px;
+    text-align: center;
+}
+#player{
+    background-color: bisque;
+    width: 700px;
+    height: 40px;
+    margin: 0px auto;
+    
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 8px; 
+}
+#article{
+    background-color: cornsilk;
+    width: 700px;
+    height: 600px;
+    margin: 0px auto;
+}
+#footer{
+    background-color: darkred;
+    color: white;
+    width: 700px;
+    height: 50px;
+    margin: 0px auto;
+    line-height: 50px;
+    text-align: center;
+}
