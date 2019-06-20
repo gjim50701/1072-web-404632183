@@ -25,7 +25,7 @@ Of course,if you want another bootstrap themes, you can find them in: https://bo
 
 ## Simple(9)
 
-<img width="600" height="300" src="https://github.com/gjim50701/1072-web-404632183/blob/master/9.Final-Paper/dbdemo/public/assets/img/githubimage1.JPG"/>
+<img width="1000" height="500" src="https://github.com/gjim50701/1072-web-404632183/blob/master/9.Final-Paper/dbdemo/public/assets/img/githubimage1.JPG"/>
 
 
 
