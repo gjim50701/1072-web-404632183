@@ -13,7 +13,7 @@ My portfolio(learn from the lesson): https://gjim50701.github.io/1072-web-404632
 
 If you want to open them , you need to :  
 1.Open MySQL80 (Task manager > service).  
-2.create the database youself(agent table and tour table).  
+2.create the database youself(only 10 need).  
 3.install nodemon.  
 
 command(in the terminal of IDE):  
@@ -21,7 +21,11 @@ npm install
 npm install nodemon  
 npm start  
 
-Of course, you can find free bootstrap themes in: https://bootstrapmade.com/   
+Of course,if you want another bootstrap themes, you can find them in: https://bootstrapmade.com/   
+
+## Simple(9)
+
+<img width="600" height="300" src="https://github.com/gjim50701/1072-web-404632183/blob/master/9.Final-Paper/dbdemo/public/assets/img/githubimage1.JPG"/>
 
 
 
