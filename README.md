@@ -11,17 +11,17 @@ My portfolio(learn from the lesson): https://gjim50701.github.io/1072-web-404632
 
 ## Bootstrap/MySQL(only 9,10 need)
 
-You can find free theme free bootstrap themes in: https://bootstrapmade.com/  
-
 If you want to open them , you need to :  
 1.Open MySQL80 (Task manager > service).  
 2.create the database youself(agent table and tour table).  
 3.install nodemon.  
 
-command:  
+command(in the terminal of IDE):  
 npm install  
 npm install nodemon  
 npm start  
+
+Of course, you can find free bootstrap themes in: https://bootstrapmade.com/   
 
 
 
